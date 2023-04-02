@@ -17,10 +17,10 @@ class Login extends Component{
          withCredentials : true,
           method:'post',
           //in development:
-          //url:'http://localhost:7000/users/login',
+          url:'http://localhost:7000/users/login',
 
           //in production:
-          url:'https://reandcomm.herokuapp.com/users/login',
+          //url:'https://reandcomm.herokuapp.com/users/login',
           data: newUser,
 
         }).then(response =>
@@ -39,8 +39,8 @@ class Login extends Component{
             document.cookie= token;
 
             //redirect user to other page
-            //document.location.assign('http://localhost:3000/comments')
-            document.location.assign('https://reandcomm.herokuapp.com/comments')
+            document.location.assign('http://localhost:3000/comments')
+            //document.location.assign('https://reandcomm.herokuapp.com/comments')
             console.log(token)
           })
 

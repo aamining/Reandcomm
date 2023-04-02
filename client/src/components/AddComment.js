@@ -20,8 +20,8 @@ class AddComment extends Component{
     getUser(){
       axios.request({
         method:'get',
-        //url:'http://localhost:7000/whoAmI',
-        url:'https://reandcomm.herokuapp.com/whoAmI',
+        url:'http://localhost:7000/whoAmI',
+        //url:'https://reandcomm.herokuapp.com/whoAmI',
         headers: {"Authorization": `Bearer ${this.state.token}`}
 
 
@@ -38,8 +38,8 @@ class AddComment extends Component{
 
     headers: {"Authorization": `Bearer ${this.state.token}`},
       method:'post',
-      //url:'http://localhost:7000/comments',
-      url:'https://reandcomm.herokuapp.com/comments',
+      url:'http://localhost:7000/comments',
+      //url:'https://reandcomm.herokuapp.com/comments',
 
       data: newComment,
 
