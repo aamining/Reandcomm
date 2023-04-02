@@ -14,9 +14,9 @@ import {
 import {Comments} from '../models';
 import {CommentsRepository} from '../repositories';
 
-//import {authenticate} from '@loopback/authentication';
+import {authenticate} from '@loopback/authentication';
 
-//@authenticate('jwt')
+@authenticate('jwt')
 
 export class CommentsController {
   constructor(
