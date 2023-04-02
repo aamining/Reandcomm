@@ -9,14 +9,14 @@ class Signup extends Component{
         axios.request({
           method:'post',
           // in dedevelopment:
-          url:'http://localhost:7000/signup',
+          //url:'http://localhost:7000/signup',
           // in production:
-          //url:'https://commentsforali.herokuapp.com/signup',
+          url:'https://reandcomm.herokuapp.com/signup',
           data: newUser,
 
         })//.then((response) => window.location.assign('https://commentsforali.herokuapp.com/login'))
         //in development:
-        .then((response) => window.location.assign('http://localhost:3000/login'))
+        .then((response) => window.location.assign('https://reandcomm.herokuapp.com/login'))
 
         .catch(err => console.log(err));
       }
