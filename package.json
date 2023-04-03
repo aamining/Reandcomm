@@ -28,7 +28,7 @@
     "openapi-spec": "node ./dist/openapi-spec",
     "rebuild": "npm run clean && npm run build",
     "client": "npm start --prefix client",
-    "start": "concurrently \"node dist/index.js\" \"npm run client\"",
+    "start": "concurrently \"npm run client\" \"node dist/index.js\" ",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client "
   },
   "repository": {
