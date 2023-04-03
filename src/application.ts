@@ -38,7 +38,7 @@ export class LoopbackApplication extends BootMixin(
     });
     this.component(RestExplorerComponent);
 
-    this.projectRoot = '/';
+    this.projectRoot = __dirname;
     // Customize @loopback/boot Booter Conventions here
     this.bootOptions = {
       controllers: {
