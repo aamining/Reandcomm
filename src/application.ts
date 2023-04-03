@@ -30,7 +30,7 @@ export class LoopbackApplication extends BootMixin(
     this.sequence(MySequence);
 
     // Set up default home page
-    this.static('/', path.join(__dirname, '../client'));
+    this.static('https://reandcomm.herokuapp.com', path.join(__dirname, '../client'));
 
     // Customize @loopback/rest-explorer configuration here
     this.configure(RestExplorerBindings.COMPONENT).to({
