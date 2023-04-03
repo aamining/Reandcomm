@@ -30,7 +30,7 @@ export class LoopbackApplication extends BootMixin(
     this.sequence(MySequence);
 
     // Set up default home page
-    this.static('/', path.join('index.html'));
+    this.static('/','index.html');
 
     // Customize @loopback/rest-explorer configuration here
     this.configure(RestExplorerBindings.COMPONENT).to({
